@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Register Page</title>
+</head>
+<body class="font-sans bg-gray-100 flex items-center justify-center min-h-screen m-0 text-gray-800">
+    <div class="bg-white p-5 rounded-lg shadow-lg w-72">
+        <h1 class="font-bold text-3xl mb-5 text-center">Register</h1>
+        <form id="registerForm" action="/src/register.html" method="post">
+            <label for="userInput" class="block text-sm">Username</label>
+            <input type="text" id="userInput" minlength="3" required
+                   class="w-full p-2.5 my-2.5 border border-gray-300 rounded" />
+
+            <label for="mailInput" class="block text-sm">Email</label>
+            <input type="email" id="mailInput" required
+                   class="w-full p-2.5 my-2.5 border border-gray-300 rounded" />
+
+            <label for="passInput" class="block text-sm">Password</label>
+            <input type="password" id="passInput" required
+                   class="w-full p-2.5 my-2.5 border border-gray-300 rounded" />
+
+            <label for="confirmInput" class="block text-sm">Confirm Password</label>
+            <input type="password" id="confirmInput" required
+                   class="w-full p-2.5 my-2.5 border border-gray-300 rounded" />
+
+            <label for="dateInput" class="block text-sm">Birth Date</label>
+            <input type="date" id="dateInput" required
+                   class="w-full p-2.5 my-2.5 border border-gray-300 rounded" />
+
+            <button type="submit" class="w-full p-3 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">Register</button>
+            <a href="login.html" class="block text-right mt-4 text-blue-500 hover:underline">already have an account? login</a>
+        </form>
+        <div id="registerMessage" class="mt-2 text-red-500 text-center text-sm"></div>
+    </div>
+    <script type="module" src="register.js"></script>
+</body>
+</html>

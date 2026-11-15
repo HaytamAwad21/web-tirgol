@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Login</title>
+</head>
+<body class="font-sans bg-gray-100 flex items-center justify-center min-h-screen m-0 text-gray-800">
+    <div class="bg-white p-5 rounded-lg shadow-lg w-72">
+        <h1 class="font-bold text-3xl mb-5">Login</h1>
+        <form id="loginForm" action="/src/login" method="post">
+            <label for="userInput" class="block text-sm">Username or Email</label>
+            <input type="text" id="userInput" required
+                   class="w-full p-2.5 my-2.5 border border-gray-300 rounded" />
+            <label for="passInput" class="block text-sm">Password</label>
+            <input type="password" id="passInput" required
+                   class="w-full p-2.5 my-2.5 border border-gray-300 rounded" />
+            <button type="submit" class="w-full p-3 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer">Login</button>
+            <a href="register.html" class="block text-center w-full p-3 mt-4 bg-gray-200 text-gray-800 rounded hover:bg-gray-300">Register</a>
+            <a href="#" class="block text-right mt-4 text-blue-500 hover:underline" onclick="alert('Forgot password functionality to be implemented.');">Forgot Password?</a>
+        </form>
+        <div id="loginMessage" class="mt-2 text-red-500 text-center text-sm"></div>
+    </div>
+    <script type="module" src="login.js"></script>
+</body>
+</html>
