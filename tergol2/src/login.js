@@ -16,7 +16,8 @@ loginForm.addEventListener('submit', function (event) {
   let pass = 'password';
 
   if (user != undefined) {
-    nameOrEmail = user.username;
+    // match whichever one was typed: the username or the email
+    nameOrEmail = usernameOrEmail === user.email ? user.email : user.username;
     pass = user.password;
   }
 
