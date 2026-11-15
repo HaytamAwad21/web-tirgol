@@ -30,7 +30,10 @@ registerForm.addEventListener('submit', async (event) => {
       return;
     }
 
-    users.push({ username, email, password, dob });
+    // the first user to register is the admin, everyone after is a regular user
+    const role = users.length === 0 ? 'admin' : 'user';
+
+    users.push({ username, email, password, dob, role });
 
     localStorage.setItem('users', JSON.stringify(users));
 

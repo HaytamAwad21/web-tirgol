@@ -10,6 +10,7 @@ export default defineConfig({
         main: 'index.html',
         login: 'src/login.html',
         register: 'src/register.html',
+        userManagement: 'src/userManagement.html',
       },
     },
   },
